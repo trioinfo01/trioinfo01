@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrioInfo - IT Solutions & Tech Innovation</title>
+    <link rel="stylesheet" href="css/style.css?v=22">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <img src="assets/images/logo/logo.png" alt="TrioInfo Logo">
+            <div class="logo-text">
+                Trio<span class="accent-red">Info</span>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Capabilities</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-cta" data-scroll="#contact">Get In Touch</button>
+    </nav>
+
+    <!-- Static Fullscreen Hero Background (Covers 100% viewport, stays static on scroll) -->
+    <div class="fixed-hero-bg" aria-hidden="true">
+        <img id="hero-static-img" src="assets/images/important-image.jpg" alt="TrioInfo Innovation Lab" fetchpriority="high">
+        <div class="hero-media-overlay" id="hero-overlay"></div>
+    </div>
+
+    <!-- Hero Scroll Track (Allows scrolling to trigger the animation) -->
+    <section id="home" class="hero-scroll-track">
+        <div class="hero-sticky-frame">
+            <!-- Initial Bottom Scroll Indicator (Visible on open, fades out on first scroll) -->
+            <div class="scroll-prompt-initial">
+                <div class="mouse-scroll">
+                    <div class="mouse-wheel"></div>
+                </div>
+                <span>Scroll to explore</span>
+            </div>
+
+            <!-- Scroll-Triggered Hero Section Card (Rises up on scroll with transparent background) -->
+            <div class="hero-glass-card" id="heroGlassCard">
+                <div class="hero-card-text">
+                    <h1>Empowering The Future <br><span class="gradient-text">Through Three Pillars</span></h1>
+                    <p>Where Fullstack Engineering, Intelligent Systems, and Cloud DevOps converge into seamless execution.</p>
+                </div>
+
+                <div class="hero-card-cta">
+                    <button class="nav-cta" data-scroll="#services">Explore Capabilities</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Sections Container (Stacked panels override each other on scroll via GSAP ScrollTrigger) -->
+    <main class="sections-container">
+    <!-- Panel 1: The Trio Synergy -->
+    <section id="services" class="content-section stack-panel">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">The Trio Synergy</span>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Red Pillar: Fullstack Development -->
+                <div class="service-card card-red">
+                    <div class="card-top">
+                        <div class="card-icon-wrap">&lt;/&gt;</div>
+                        <span class="node-tag">Fullstack Node</span>
+                    </div>
+                    <h3>Fullstack Development</h3>
+                    <p>End-to-end web and mobile applications designed with scalable architectures, modern frameworks, and robust database layers.</p>
+                    <ul class="card-features">
+                        <li><span>✓</span> Enterprise Web Applications</li>
+                        <li><span>✓</span> Reactive Single-Page Apps</li>
+                        <li><span>✓</span> High-Performance REST & GraphQL APIs</li>
+                    </ul>
+                </div>
+
+                <!-- Gold Pillar: Smart Tech Innovation -->
+                <div class="service-card card-gold">
+                    <div class="card-top">
+                        <div class="card-icon-wrap">⚡</div>
+                        <span class="node-tag">Innovation Node</span>
+                    </div>
+                    <h3>AI & Tech Innovation</h3>
+                    <p>Harnessing artificial intelligence, neural networks, and modern data processing algorithms to automate and scale intelligent business decisions.</p>
+                    <ul class="card-features">
+                        <li><span>✓</span> Custom AI & Machine Learning</li>
+                        <li><span>✓</span> Intelligent Process Automation</li>
+                        <li><span>✓</span> Next-Gen Analytics Engines</li>
+                    </ul>
+                </div>
+
+                <!-- Slate Pillar: Cloud & DevOps -->
+                <div class="service-card card-slate">
+                    <div class="card-top">
+                        <div class="card-icon-wrap">♾️</div>
+                        <span class="node-tag">Operations Node</span>
+                    </div>
+                    <h3>DevOps & Cloud Systems</h3>
+                    <p>Resilient cloud infrastructure, continuous deployment workflows, and round-the-clock automated monitoring ensuring maximum uptime.</p>
+                    <ul class="card-features">
+                        <li><span>✓</span> Automated CI/CD Pipelines</li>
+                        <li><span>✓</span> Kubernetes & Cloud Orchestration</li>
+                        <li><span>✓</span> 99.99% Reliability & Security Audit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Panel 2: About TrioInfo -->
+    <section id="about" class="content-section stack-panel">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="badge-tag">About TrioInfo</span>
+                    <h2>Driven by Passion, Built for Reliability</h2>
+                    <p>At TrioInfo, our foundation rests upon three inseparable principles: technical precision in software development, relentless curiosity in innovative algorithms, and operational resilience in cloud infrastructure.</p>
+                    <p>From university innovation hubs to high-growth enterprises, our team transforms ambitious concepts into digital reality.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number stat-red">100%</div>
+                            <div class="stat-label">Fullstack Quality</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number stat-gold">3x</div>
+                            <div class="stat-label">Faster Innovation</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number stat-slate">99.9%</div>
+                            <div class="stat-label">System Uptime</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="logo-display-card">
+                        <img src="assets/images/logo/logo.png" alt="TrioInfo Emblem">
+                        <h4>The Trio Emblem</h4>
+                        <p>Red, Gold & Slate representing Development, Innovation, and Cloud Infrastructure connected in harmony.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Panel 3: Ready to Transform (CTA) -->
+    <section id="contact" class="content-section stack-panel cta-panel">
+        <div class="container">
+            <div class="cta-banner">
+                <h2>Ready to Transform Your IT Landscape?</h2>
+                <p>Partner with TrioInfo today and bring your most challenging technological ideas to life.</p>
+                <button class="btn-white" onclick="alert('Thank you for reaching out to TrioInfo! Contact form coming soon.')">Start Your Project</button>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="assets/images/logo/logo.png" alt="TrioInfo Logo">
+                <span>TrioInfo IT Solutions</span>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Capabilities</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TrioInfo. All rights reserved. Crafted with HTML, CSS & Vanilla JS.</p>
+        </div>
+    </footer>
+
+    <script src="js/lib/gsap.min.js"></script>
+    <script src="js/lib/ScrollTrigger.min.js"></script>
+    <script src="js/lib/lenis.min.js"></script>
+    <script src="js/main.js?v=10"></script>
+</body>
+</html>
