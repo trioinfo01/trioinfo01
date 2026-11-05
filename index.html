@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/main.js" defer></script>
   </head>
-  <body>
-    <div class="preloader" id="preloader" role="status" aria-label="Loading TrioInfo website" hidden>
+  <body class="is-loading">
+    <div class="preloader" id="preloader" role="status" aria-label="Loading TrioInfo website">
       <div class="preloader__content">
         <img class="preloader__logo" src="assets/images/logo.png" alt="" />
         <p class="preloader__brand">TRIOINFO</p>
@@ -44,8 +44,9 @@
           preload="auto"
           aria-hidden="true"
           tabindex="-1"
+          data-desktop-src="assets/video/hero.mp4"
+          data-mobile-src="assets/video/herosection-mobile.mp4"
         >
-          <source src="assets/video/hero.mp4" type="video/mp4" />
         </video>
 
         <div class="hero__shade" aria-hidden="true"></div>
@@ -61,14 +62,18 @@
         <div class="hero__content">
           <p class="hero__eyebrow"><span></span> Bold Ideas · Intelligent Technology · Built to Scale</p>
           <h1 id="hero-title">
-            Ideas into
-            <span>digital reality.</span>
+            <span class="hero__headline-lead" data-hero-lead>Ideas into</span>
+            <span data-hero-headline>digital reality.</span>
           </h1>
-          <p class="hero__description">
+          <p class="hero__description" data-hero-description>
             We bring thoughtful design and powerful technology together to build
             digital experiences that move your business forward.
           </p>
-         
+          <div class="hero__indicators" aria-hidden="true">
+            <span class="is-active"></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
 
       </section>
